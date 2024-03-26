@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navbar top*/
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+
+}
+@media screen and(max-width:700px) {
+    .social-link i img {
+        width: 20px;
+    }
+    }
+
+.logo h3{
+    font-weight: bold;
+
+}
+@media screen and (max-width:700px) {
+    .logo h3{
+        font-size: 20px;
+    }    
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .icons i img{
+        width: 20px;
+    }
+}
+/*navbar top*/
+/*main content*/
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: 70%;
+}
+/*navbar */
+#navbar-color{
+    background-color: rgba(238,224,208);
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: rgb(221, 36, 238);
+}
+/*navbar */
+/* content*/
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-size: 50px;
+    text-align: center;
+}
+.content p{
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+    background-image: url(./img/images.jpeg);
+    background-repeat: no-repeat  ;
+    background-size: 700px 1280px;
+    background-position: center;
+}
+@media only screen and ( max-width :700px){
+
+     content h1{
+        font-size: 14px;
+        text-align: center;
+     margin-bottom: 20px;
+
+    }
+    .content p{
+        width: 100%;
+        height: 100%;
+       font-size: medium;
+       margin-left:-20px ;
+       right: 40px;
+    }
+    .main-content{
+        background-position: 100px;
+}
+#btn1 button {
+    margin-right: 100%;
+    margin-top: 100;
+}
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+   position: relative;
+    left: 40%;
+}
+
+#btn1 button:hover{
+    background-color: rgb(34, 245, 210);
+}
+@media screen and(max-width:700px) {
+    .content h1{ 
+    font-size: 30px;
+}
+}
+/* content*/
+
+/*main content*/
+
+/*card 1*/
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgba(238,224,208);
+}
+/*card 1*/
+
+/*card 2*/
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+.card-tital {
+    background: wheat;
+}
+/*card 2*/
+.background{
+    background-color: #baddf5;
+    background-image: linear-gradient(135deg,#c7eb65 0%, #7bf5ae 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.slider-img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: moving 30s linear infinite;
+}
+@keyframes moving {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider-img span{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+.slider-img span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+
+@media screen and(max-width:600px){
+    #btn1 button{
+      text-align: center;
+      align-items: center;
+      margin-top: -100%;
+    }
+    .content h1{
+        display: block;
+    }
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color: rgb(138, 245, 245);
+    color: gray;
+}
+
+#navbar-color{
+    background-color: rgba(238,224,208);
+    align-items: center;
+    text-align: center;
+}
+
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+.nav-link:hover{
+    color: rgb(221, 36, 238);
+}
